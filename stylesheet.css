@@ -54,3 +54,13 @@ body {
     border-right: 200px solid transparent;
     z-index: -1;
 }
+.mountain2 { 
+    left: 130px;
+    bottom: 30%;
+    position: absolute;
+    border-bottom: 220px solid #646c7a; /* the border is solid and it's transparent */ 
+    border-left: 220px solid transparent;
+    border-right: 260px solid transparent;
+    z-index: -2;
+} 
+
