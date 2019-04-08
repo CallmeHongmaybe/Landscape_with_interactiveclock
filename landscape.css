@@ -1,7 +1,3 @@
-h1 {
-    justify-content: center; 
-}
-
 body { 
     width: 100%;
     height: 100%;
@@ -9,16 +5,33 @@ body {
     top: 0;
     bottom: 0;
     background-color: #9faaf2; 
+    animation: skychange 10s infinite;
+}
+
+@keyframes skychange { 
+    0%,100% {
+        background-color: #161616;
+    }
+    25% { 
+        background-color: #76afed;
+    }
+    50% {
+        background-color: #756234;
+    }
+    75% { 
+        background-color: #5fdae8;
+    }
 }
 
 .sun {
     width: 50px;
     height: 50px;
     position: relative;
-    top:20px;
-    left: 50px;
+    top: 3px;
+    left: 10px;
     border-radius: 50px 50px;
     background-color: yellow;
+    animation: sideways 10s infinite;
 }
 /*.moon {
     width: 50px;
@@ -27,15 +40,21 @@ body {
     background-color: rgb(245,245,245);
 }
 */
-.container {
+@keyframes sideways { 
+  100% {
+      transform: translateX(500px);   /* better than specifying destinations for each step*/ 
+  }                                 /* transform allows to visually manipulate objects */ 
+}                                 /* can use it for skewing, translating or scaling */ 
+
+ .container {
     width: 100%;
-    height: 250px;
-    border: 1px solid white;
+    height: 75%;
+    /* border: 1px solid white; */ 
     position: fixed;
     bottom: 0;
     left: 0;
     bottom: 0;
-}
+}  
 
 .grassfields {
     width: 100%;
@@ -46,22 +65,29 @@ body {
 }
 
 .mountain { 
-    left: 0px;
+    left: 0;
     bottom: 30%;
     position: absolute;
-    border-bottom: 250px solid white; /* the border is solid and it's transparent */ 
+    border-bottom: 250px solid #646c7a; /* the border is solid and it's transparent */ 
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
     z-index: -1;
-}
+} 
+
 .mountain2 { 
     left: 130px;
     bottom: 30%;
     position: absolute;
     border-bottom: 220px solid #646c7a; /* the border is solid and it's transparent */ 
     border-left: 220px solid transparent;
-    border-right: 260px solid transparent;
+    border-right: 260px solid transparent; 
     z-index: -2;
 } 
+
+.clock { 
+    font: normal small-caps normal 40px/1 Georgia;
+    justify-content: center;
+}
+
 
 
