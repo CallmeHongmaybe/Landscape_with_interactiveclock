@@ -10,16 +10,22 @@ body {
 
 @keyframes skychange { 
     0%,100% {
-        background-color: #161616;
+        background-color: #ffffff;
+    }
+    10% { 
+        background-color: #47d0ef;
     }
     25% { 
-        background-color: #76afed;
+        background-color: #84e8ff;
     }
     50% {
-        background-color: #756234;
+        background-color: #ecf4d0; 
     }
     75% { 
-        background-color: #5fdae8;
+        background-color: #dee06b;
+    }
+    80% {
+        background-color: #ffffff;
     }
 }
 
