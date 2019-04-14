@@ -9,3 +9,14 @@ passing second ) But the problem is the sun rises at 12:00 AM and sets at midnig
 
 Nothing has been done up to date :( 
 But I'll keep trying
+
+14 / 4 / 2019 (15:36)
+I managed to do all of the requirements made yesterday. The sun rises at 6 and sets at 5. 
+The next day I'll add moonrise and moonset. It is totally different from how the sun rises and sets so I need to make further research into its nature. 
+
+To-do lists: 
+  + Research the pattern of moonrise and moonset ( what time it rises and what time it sets ) 
+  + Draw the path of the moon in 12 steps
+  + Decorate the day with clouds and night skies with stars ( if possible ) 
+  
+  
