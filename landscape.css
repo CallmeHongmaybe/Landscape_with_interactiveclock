@@ -5,7 +5,7 @@ body {
     top: 0;
     bottom: 0;
     background-color: #9faaf2; 
-    animation: skychange 10s infinite;
+    animation: skychange 24s infinite;
 }
 
 @keyframes skychange { 
@@ -30,14 +30,14 @@ body {
 }
 
 .sun {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 3px;
-    left: 10px;
-    border-radius: 50px 50px;
-    background-color: yellow;
-    animation: sideways 10s infinite;
+      width: 50px;
+      height: 50px;
+      bottom: 50px;
+      left: 0;
+      position: absolute;
+      border-radius: 50%;
+      background-color: yellow;
+      animation: sunpath 13s linear 2.9s 1; 
 }
 /*.moon {
     width: 50px;
@@ -46,11 +46,20 @@ body {
     background-color: rgb(245,245,245);
 }
 */
-@keyframes sideways { 
-  100% {
-      transform: translateX(500px);   /* better than specifying destinations for each step*/ 
-  }                                 /* transform allows to visually manipulate objects */ 
-}                                 /* can use it for skewing, translating or scaling */ 
+@keyframes sunpath {
+  0%{bottom: 150px; left: 50px;} /* for smoother transition */ 
+  5% {bottom: 215px; left: 75px;}
+  10% {bottom: 300px; left: 95px;}
+  25% {bottom: 350px; left: 105px;} 
+  35% {bottom: 400px; left: 120px;}
+  44% {bottom: 400px; left: 142.5px;}
+  50% { bottom: 425px; left: 165px;}
+  62.5% { bottom: 440px ;left: 305px;}
+  70% {left: 375px;}   /*pretty much similar to Japan in January so :p */ 
+  80% {left: 450px;}
+  90% {left: 525px;}
+  100% {left: 600px;}
+}                                
 
  .container {
     width: 100%;
