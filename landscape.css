@@ -39,12 +39,6 @@ body {
       background-color: yellow;
       animation: sunpath 13s linear 2.9s 1; 
 }
-/*.moon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px 50px;
-    background-color: rgb(245,245,245);
-}
 */
 @keyframes sunpath {
   0%{bottom: 150px; left: 50px;} /* for smoother transition */ 
@@ -59,7 +53,32 @@ body {
   80% {left: 450px;}
   90% {left: 525px;}
   100% {left: 600px;}
-}                                
+}      
+
+.moon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(245,245,245);
+    animation: moonwalk 12s linear 16s 1;
+}
+
+@keyframes moonwalk {
+  0% {display: none;} /* for smoother transition */ 
+  15% {bottom: 215px; left: 75px;}
+  20% {bottom: 300px; left: 95px;}
+  25% {bottom: 350px; left: 105px;} 
+  35% {bottom: 400px; left: 120px;}
+  50% { bottom: 425px; left: 165px;}
+  62.5% { bottom: 440px ;left: 305px;}
+  70% {left: 375px;}   /*pretty much similar to January sunset in Japan so :p */ 
+  80% {left: 450px;}
+  90% {left: 525px;}
+  100% {left: 600px;}
+} 
 
  .container {
     width: 100%;
