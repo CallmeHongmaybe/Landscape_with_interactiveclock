@@ -18,5 +18,11 @@ To-do lists:
   + Research the pattern of moonrise and moonset ( what time it rises and what time it sets ) 
   + Draw the path of the moon in 12 steps
   + Decorate the day with clouds and night skies with stars ( if possible ) 
-  
-  
+
+15 / 5 / 2019 
+I finished drawing the moon and its path. Felt happy and accomplished. But I only assume that the moon rises at 7 PM and sets at 5 AM. The clock doesn't have a reset function and I haven't decorated the sky yet. Better leave it for the next day. Even though the moon calculator was a helpful one but the moon's rising and setting pattern seemed indigestible to me :( . 
+
+To Do lists: 
+  + Decorate the day with clouds and night skies with stars 
+  + Place a bench on the grassfield with a house (@@ if possible) coz drawing a house can take another week !!
+  + Research an algorithm to make the moon fast forward its rising time by 1 hour each day. 
