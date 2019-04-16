@@ -26,3 +26,9 @@ To Do lists:
   + Decorate the day with clouds and night skies with stars 
   + Place a bench on the grassfield with a house (@@ if possible) coz drawing a house can take another week !!
   + Research an algorithm to make the moon fast forward its rising time by 1 hour each day. 
+
+16 / 5 / 2019
+I realized that decorating the sky can be harder than I would imagine. Even though I had a lot of problems drawing the stars. I got stressed out a bit and I had no idea where the error was so I took a break and who knew, I did it at 8 am. However, there are a lot of things that should've done today. 
+To-do lists: 
++ Place a bench on the grassfield with a lamp (@@ if possible) coz drawing a house can take another week !!
++ Research an algorithm to make the moon fast forward its rising time by 1 hour each day. ( if possible )  
