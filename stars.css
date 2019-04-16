@@ -1,0 +1,76 @@
+body { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    background-color: #9faaf2; 
+    animation: skychange 24s linear forwards 1;
+}
+
+@keyframes skychange { 
+    0%,100% {
+        background-color: #000000;
+    }
+    15% { 
+        background-color: #47d0ef;
+    }
+    25% { 
+        background-color: #84e8ff;
+    }
+    50% {
+        background-color: #99c0ff; 
+    }
+    65% {
+        background-color: #ecf4d0; 
+    }
+    75% { 
+        background-color: #dee06b;
+    }
+    80% {
+        background-color: #3878e0;
+    }
+    90% {
+        background-color: #000023;
+    }
+}
+
+.bigdipper {
+    position: relative;
+    top: 50px;
+    width: 100%;
+} 
+
+.stars>div{ 
+    width: 5px;
+    height: 5px;
+    background-color: rgb(245,245,245);
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.stars>div:nth-child(1){
+    left: 120px;
+}
+.stars>div:nth-child(2){
+    left: 170px;
+    bottom: 30px;
+}
+.stars>div:nth-child(3){
+    left: 240px;
+    bottom: 20px;
+}
+.stars>div:nth-child(4){
+    left: 310px;
+}
+.stars>div:nth-child(5){
+    left: 310px;
+    bottom: -60px;
+}
+.stars>div:nth-child(6){
+    left: 420px;
+}
+.stars>div:nth-child(7){
+    left: 400px;
+    bottom: -55px;
+}
