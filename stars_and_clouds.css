@@ -1,0 +1,149 @@
+body { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    background-color: #9faaf2; 
+    animation: skychange 24s linear forwards 1;
+}
+
+@keyframes skychange { 
+    0%,100% {
+        background-color: #000000;
+    }
+    15% { 
+        background-color: #47d0ef;
+    }
+    25% { 
+        background-color: #84e8ff;
+    }
+    50% {
+        background-color: #99c0ff; 
+    }
+    65% {
+        background-color: #ecf4d0; 
+    }
+    75% { 
+        background-color: #dee06b;
+    }
+    80% {
+        background-color: #3878e0;
+    }
+    90% {
+        background-color: #000023;
+    }
+}
+
+.bigdipper {
+    position: relative;
+    top: 600px;
+    width: 100%;
+    animation: drift 12s linear 17s 1;
+    transform: rotate(65deg);
+} 
+
+@keyframes drift {
+    100%{
+        transform: translateY(-600px);
+    }
+}
+
+.stars>div{ 
+    width: 5px;
+    height: 5px;
+    background-color: rgb(245,245,245);
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.stars>div:nth-child(1){
+    left: 120px;
+}
+.stars>div:nth-child(2){
+    left: 170px;
+    bottom: 30px;
+}
+.stars>div:nth-child(3){
+    left: 240px;
+    bottom: 20px;
+}
+.stars>div:nth-child(4){
+    left: 310px;
+}
+.stars>div:nth-child(5){
+    left: 310px;
+    bottom: -60px;
+}
+.stars>div:nth-child(6){
+    left: 420px;
+}
+.stars>div:nth-child(7){
+    left: 400px;
+    bottom: -55px;
+}
+
+.clouds {
+    position: absolute;    
+    top: -20px;
+    width: 80%;  /* clouds will look like bandwidhts from now on */ 
+    animation: flow 12s linear 6s 1; 
+}
+
+@keyframes flow {
+    100% {
+        transform: translateX(600px);
+    }
+}
+
+.clouds>div{     /* anything related to cloud formatting will be written here */ 
+    width: 120px;
+    height: 40px; 
+    box-shadow: 0 5px 8px rgba(0,0,0,0.1); /* to determine a shadow casting behind the clouds */ 
+    position: relative;
+    border-radius: 80px; /* the cloud should be rounder */
+}
+
+/* giving the clouds a chance to take shape(formation) before HTML loads*/
+.clouds>div:after , .clouds>div:before { 
+    background: white;
+    position: absolute;
+    content: '';  /* useful for clearfix and adding images (such as adjusting height, width , etc.)  */ 
+    z-index: -1;
+}
+
+.clouds>div:after{
+    border-radius: 80px;
+    height: 30px;
+    width: 10px;
+    left: -50px;
+    top: -50px;
+}
+
+.clouds>div:before{
+    border-radius: 160px;
+    height: 80px;
+    width: 80px;
+    left: 50px;
+    top: -90px;
+}
+
+
+.clouds>div:nth-child(1) {
+    transform: scale(0.6);
+}
+
+.clouds>div:nth-child(2) {
+    transform: scale(0.9);
+}
+
+.clouds>div:nth-child(3) {
+    transform: scale(1.1);
+}
+
+/* Notes: 
+:before -> a pseudo element that inserts the content before HTML pops up 
+:after ->  is a pseudo element which allows you to insert content onto a page from CSS (without it needing to be in the HTML).
+Source: CSS-tricks 
+*/ 
+
