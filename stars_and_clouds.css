@@ -1,40 +1,4 @@
-body { 
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    background-color: #9faaf2; 
-    animation: skychange 24s linear forwards 1;
-}
-
-@keyframes skychange { 
-    0%,100% {
-        background-color: #000000;
-    }
-    15% { 
-        background-color: #47d0ef;
-    }
-    25% { 
-        background-color: #84e8ff;
-    }
-    50% {
-        background-color: #99c0ff; 
-    }
-    65% {
-        background-color: #ecf4d0; 
-    }
-    75% { 
-        background-color: #dee06b;
-    }
-    80% {
-        background-color: #3878e0;
-    }
-    90% {
-        background-color: #000023;
-    }
-}
-
+/* CONSTELLATION */ 
 .bigdipper {
     position: relative;
     top: 600px;
@@ -43,6 +7,7 @@ body {
     transform: rotate(65deg);
 } 
 
+/* CONSTELLATION ANIMATION*/ 
 @keyframes drift {
     100%{
         transform: translateY(-600px);
@@ -83,62 +48,122 @@ body {
     bottom: -55px;
 }
 
-.clouds {
-    position: absolute;    
-    top: -20px;
-    width: 80%;  /* clouds will look like bandwidhts from now on */ 
-    animation: flow 12s linear 6s 1; 
+/* CLOUDS */ 
+.c1 {
+    animation: flow_c1 15s linear 2;
+    transform: scale(0.3);
+    left: 200px; 
+    bottom: -80px;
+    height: 780px;
+    width: 500px;
+    position: absolute;
 }
 
-@keyframes flow {
+.c2{
+    animation: flow_c2 18s linear 2;
+    transform: scale(0.3);
+    left: 150px;
+    bottom: -80px;
+    height: 880px;
+    width: 100px;
+    position: absolute;
+}
+
+.c3{
+    animation: flow_c1 23s linear 2;
+    transform: scale(0.3);
+    left: 0;
+    bottom: 0;
+    height: 850px;
+    width: 100px;
+    position: absolute;
+}
+
+/* CLOUDS ANIMATION */
+@keyframes flow_c1 {    
+    0% {
+        margin-left: -1000px;
+    }
     100% {
-        transform: translateX(600px);
+        margin-left: 100%;
     }
 }
 
-.clouds>div{     /* anything related to cloud formatting will be written here */ 
-    width: 120px;
-    height: 40px; 
-    box-shadow: 0 5px 8px rgba(0,0,0,0.1); /* to determine a shadow casting behind the clouds */ 
-    position: relative;
-    border-radius: 80px; /* the cloud should be rounder */
+@keyframes flow_c2 {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
 }
 
-/* giving the clouds a chance to take shape(formation) before HTML loads*/
-.clouds>div:after , .clouds>div:before { 
-    background: white;
+@keyframes flow_c3 {
+     0% {
+        margin-left: -1000px;  /* if I turn it down then clouds will appear quicker */ 
+    } 
+    100% {
+        margin-left: 100%;
+    }
+}
+
+
+.cloud {  /* applies to lower cloud */ 
+    background: #fff;
+    border-radius: 100px;
+    height: 120px;
+    width: 350px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    animation: darken 40s linear 1;
+}
+
+@keyframes darken {
+    0% {
+        background-color: #000000;
+    }
+    3% {
+        background-color: #ffffff;
+    }
+    50%{ 
+        background-color: #ffffff;
+    }
+    60%{ 
+        background-color: #777777;
+    }
+    80%{ 
+        background-color: #000000;
+    }
+    100%{
+        background-color: #000000;
+    } 
+}
+
+.cloud:before , .cloud:after {
+    background: #fff;
+    content: ''; /* a place for you to edit your place */ 
+    z-index : -1;
     position: absolute;
-    content: '';  /* useful for clearfix and adding images (such as adjusting height, width , etc.)  */ 
-    z-index: -1;
+    animation: darken 40s linear 2;
 }
 
-.clouds>div:after{
-    border-radius: 80px;
-    height: 30px;
-    width: 10px;
-    left: -50px;
-    top: -50px;
-}
-
-.clouds>div:before{
-    border-radius: 160px;
-    height: 80px;
-    width: 80px;
+.cloud:after{
+    height: 100px;
     left: 50px;
-    top: -90px;
+    top: -20px;
+    width: 150px;
+    border-radius: 100px;
+    z-index: -1;
+    animation: darken 40s linear 2;
 }
 
-
-.clouds>div:nth-child(1) {
-    transform: scale(0.6);
-}
-
-.clouds>div:nth-child(2) {
-    transform: scale(0.9);
-}
-
-.clouds>div:nth-child(3) {
-    transform: scale(1.1);
+.cloud:before{ 
+    height: 180px;
+    left: 130px;
+    top: -60px;
+    width: 180px;
+    border-radius: 100px;
+    z-index: -1; 
+    animation: darken 40s linear 2;
 }
 
 /* Notes: 
