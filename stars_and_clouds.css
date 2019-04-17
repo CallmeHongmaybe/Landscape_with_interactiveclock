@@ -1,16 +1,16 @@
-/* CONSTELLATION */ 
 .bigdipper {
     position: relative;
     top: 600px;
     width: 100%;
-    animation: drift 12s linear 17s 1;
+    animation: drift 10s linear 17s 1;
     transform: rotate(65deg);
+    z-index: -3;
 } 
 
 /* CONSTELLATION ANIMATION*/ 
 @keyframes drift {
     100%{
-        transform: translateY(-600px);
+        transform: translateY(-800px);
     }
 }
 
@@ -20,6 +20,7 @@
     background-color: rgb(245,245,245);
     transform: rotate(45deg);
     position: absolute;
+    
 }
 
 .stars>div:nth-child(1){
