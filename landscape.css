@@ -123,5 +123,29 @@ body {
     justify-content: center;
 }
 
+.road {
+    border-bottom: 130px solid #2a2a2b;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    width: 75px;
+    height: 0;   /* idk why the smaller the height the shorter the trapezoid */ 
+}
 
+.v1{
+    left: 85px;
+    position: absolute; /* we need to determine the position so that we can adjust its position */
+}
+
+.vpl {
+    border-bottom: 130px solid #fff;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    width: 5px;
+    height: 0;
+}
+
+.s1{
+    left: 30px;
+    position: absolute;
+}
 
