@@ -19,7 +19,7 @@ To-do lists:
   + Draw the path of the moon in 12 steps
   + Decorate the day with clouds and night skies with stars ( if possible ) 
 
-15 / 5 / 2019 
+15 / 4 / 2019 
 I finished drawing the moon and its path. Felt happy and accomplished. But I only assume that the moon rises at 7 PM and sets at 5 AM. The clock doesn't have a reset function and I haven't decorated the sky yet. Better leave it for the next day. Even though the moon calculator was a helpful one but the moon's rising and setting pattern seemed indigestible to me :( . 
 
 To Do lists: 
@@ -27,8 +27,11 @@ To Do lists:
   + Place a bench on the grassfield with a house (@@ if possible) coz drawing a house can take another week !!
   + Research an algorithm to make the moon fast forward its rising time by 1 hour each day. 
 
-16 / 5 / 2019
+16 / 4 / 2019
 I realized that decorating the sky can be harder than I would imagine. Even though I had a lot of problems drawing the stars. I got stressed out a bit and I had no idea where the error was so I took a break and who knew, I did it at 8 am. However, there are a lot of things that should've done today. 
 To-do lists: 
 + Place a bench on the grassfield with a lamp (@@ if possible) coz drawing a house can take another week !!
 + Research an algorithm to make the moon fast forward its rising time by 1 hour each day. ( if possible )  
+
+18 / 4 / 2019: 
+Yes! I've finished the project at last! The website looks beautiful and stunning ( to me 😀😇). But I saw the lack of algorith and the code saw little involvement from .js script. I won't be able to concentrate on the project as much as I did in the past but whenever I had time I tried to make the code look more interactive and users can adjust the weather or switch locations where the sun and the moon rises differently from my imaginary place. That'll require a lot of energy and time especially for a newbie like me. But I'll do my best 😌. 
