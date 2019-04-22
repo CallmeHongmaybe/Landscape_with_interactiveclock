@@ -1,0 +1,7 @@
+22 / 4 / 2019 ( 9:17 pm ) 
+I dreamed about having a sidebar on the left which allows you to control the humidity, temperature and visibility. 
+Additional mini features include: 
+  + Updating current time and the sky will correspond to the time 
+  + Show the temperatures in celsuis and fahrenheit 
+  + Place a house beside the road to see what happens to it if the weather changes 
+ 
