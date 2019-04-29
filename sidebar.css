@@ -1,0 +1,69 @@
+body {
+ 	background-color: purple;
+}
+
+.expand {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex; /* In flexbox terms, diplay flex means to set up a working space (flexspace for the arro)*/
+    position: absolute;
+    align-items: center;   /* turns out that all items in the id = "expand" sect are aligned */ 
+    justify-content: center;
+}
+
+#arrow{
+    background-color: #fff;
+    font-size: 80px;
+}
+
+.menu {
+    background-color: white;
+    top: 100px;
+    width: 300px;
+    left: 0;
+    position: absolute;
+    font: center;
+    border-radius: 0 0 10px 10px;
+}
+
+a{    /* Manipulates a tags */ 
+   display: block;      /* It is known that items are displayed in contiguous blocks */ 
+   text-align: center;    /* i tags are just texts so use text-align instead of using justify-content */
+   margin-top: 50px;
+   margin-right: 200px;
+   margin-bottom: 20px;
+}
+
+.material_icons{
+    font-size: 30px;
+}
+
+.iconify{
+    font-size: 50px; 
+}
+
+.fas fa-wind{
+    font-size: 50px; 
+}
+
+.control-bar {
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    margin-left: 92px;
+    bottom: 118px;
+    border: 1px solid black;
+    z-index: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+div>.subsect {
+    display: block;
+    border: 1px solid black;
+}
+
+
