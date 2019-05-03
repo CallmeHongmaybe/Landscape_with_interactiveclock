@@ -13,22 +13,30 @@ body {
     position: absolute;
     align-items: center;   /* turns out that all items in the id = "expand" sect are aligned */ 
     justify-content: center;
+    cursor: pointer;
 }
 
-#arrow{
+#edit{
     background-color: #fff;
-    font-size: 80px;
+    font-size: 50px;
 }
 
-.menu {
+#edit:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+
+#menu {
     background-color: white;
     top: 100px;
     width: 300px;
-    left: 0;
+    left: -300px;
     position: absolute;
     font: center;
     border-radius: 0 0 10px 10px;
+    transition: 0.75s;
 }
+/*transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];*/
 
 a{    /* Manipulates a tags */ 
    display: block;      /* It is known that items are displayed in contiguous blocks */ 
@@ -39,7 +47,7 @@ a{    /* Manipulates a tags */
 }
 
 .material_icons{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .iconify{
@@ -50,20 +58,69 @@ a{    /* Manipulates a tags */
     font-size: 50px; 
 }
 
-.control-bar {
+#control-bar {
     width: 200px;
-    height: 280px;
-    position: absolute;
+    height: 580px;
+    position: relative;
     margin-left: 92px;
-    bottom: 118px;
-    border: 1px solid black;
+    margin-top: -268px;
+    /*border: 1px solid black;*/
     z-index: 0;
     border-radius: 0 0 15px 15px;
+    left: -300px;
+    transition: 0.75s;
 }
 
-div>.subsect {
-    display: block;
-    border: 1px solid black;
+.subsect{
+    margin-bottom: 30px;
+    font-family: Serif;
+    font-size: 18px;
 }
 
+#container {
+    width: 95%; 
+    height: 20px;
+    /*border: 1px solid black;*/
+}
 
+#humid_slider, #temp_slider, #wind_slider{
+    width: 90%;
+    margin-left: 10px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    box-shadow: inset 0 3px 18px rgba(0,0,0,0.7);   /* so that the sliders seem to be blended */
+    height: 5px;
+    border-radius: 5px;
+    outline: none;    /* so that you can get rid of the select blue bordered space upon clicking */
+}
+
+#humid_slider::-webkit-slider-thumb, #temp_slider::-webkit-slider-thumb, #wind_slider::-webkit-slider-thumb{    /* :: is to access sth and : is to call an attribute*/
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    height: 20px;
+    width: 10px;
+    background-color: blue;
+    outline: none;
+    cursor: pointer;
+}
+
+/* the inner circle is light blue and the outside is blue */ 
+/*#sliders::-webkit-slider-thumb:hover {*/
+/*    box-shadow: 0 0 0 3px ##bfd7ff, 0 0 0 6px blue;*/
+/*}*/
+
+/* #sliders:active::-webkit-slider-thumb{   /* same goes */ 
+/*    box-shadow: 0 0 0 3px ##bfd7ff, 0 0 0 6px blue; */
+/*}*/
+
+#info {
+    display: flex;
+    /*border: 1px solid green;*/
+    width: 200px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.indicator{
+    margin-top: 18px;
+}
