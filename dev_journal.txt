@@ -34,4 +34,7 @@ To-do lists:
 + Research an algorithm to make the moon fast forward its rising time by 1 hour each day. ( if possible )  
 
 18 / 4 / 2019: 
-Yes! I've finished the project at last! The website looks beautiful and stunning ( to me 😀😇). But I saw the lack of algorith and the code saw little involvement from .js script. I won't be able to concentrate on the project as much as I did in the past but whenever I had time I tried to make the code look more interactive and users can adjust the weather or switch locations where the sun and the moon rises differently from my imaginary place. That'll require a lot of energy and time especially for a newbie like me. But I'll do my best 😌. 
+Yes! I've finished the project at last! The website looks beautiful and stunning ( to me 😀😇). But I saw the lack of algorith and the code saw little involvement from .js script. I won't be able to concentrate on the project as much as I did in the past but whenever I had time I tried to make the code look more interactive and users can adjust the weather or switch locations where the sun and the moon rises differently from my imaginary place. That'll require a lot of energy and time especially for a newbie like me. But I'll do my best 😌.  
+
+10 / 5 / 2019: 
+Hi long time no see~~! The website code has now been moved to Brackets and the sidebar has been completed. Now I'm just gonna add something to the info board. 
