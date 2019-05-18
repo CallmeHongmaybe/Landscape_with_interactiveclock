@@ -1,35 +1,131 @@
-#info_board {
-    top: 0; 
-    bottom: 0; 
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-/*    border: 3px solid green;*/
-    width: 200px;
-    height: 340px; 
-}
-        
-#info_space {
-    top: 0; 
-    bottom: 0; 
-    right: 0;
-    width: 140px; 
-    height: 320px;
-    position: absolute; 
+/*  body {
+    background-color: #e4edce;	
+}  */
+
+.container {
     background-color: white;
-    border-radius: 20px 20px 20px 20px; 
-    border: 10px solid blue;
+    width: 500px;
+    height: 200px; 
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0; 
+    left: 0; 
+    right: 0;  
 }
-    
- .explainer {
-    font-family: sans-serif; 
-    background-color: aqua;
-    width: 140px; 
-    height: 30px;
-    position: absolute; 
-    border-radius: 10px 10px 0 0 ;
+
+.item {
+    float: left;
+    height: 200px;
+    width: 125px;
+} 
+
+.feels_like, .UV_index, .visibility, .dew_point { 
+    height: 100%; 
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    font-size: 40px;  
+    align-items: center; 
+    flex-direction: column;
+}
+
+.feels_like {
+    background-color: #f72c2c; 
+}
+ 
+.UV_index {
+    background-color: yellow; 
+} 
+
+.visibility {
+    background-color: cyan;
+}
+
+.dew_point { 
+    background-color: #5225e8;
+}   
+
+#sun {
+    /*background-color: white;    use it to check how much space it takes */
+    height: 20%;
+}
+
+p {
+    font-family: 'Monserrat',sans-serif; 
+    font-size: 0.4em; 
+    text-transform: uppercase;
+    text-decoration: none; 
+    font-weight: 900;   
+    color: white;
+} 
+
+#UVmsg, #vis_title {
+    color: black;
+}
+
+#UVI, #vis {
+    font-size: 0.8em;   
+    color: black;
+}
+#feel_temp, #deww{ 
+    font-size: 0.8em;   
+    color: white;
+}
+
+.meaning {
+    visibility: hidden; 
+    font-size: 0.4em;
     text-align: center;
-    font-size: 20px;
-    cursor: pointer;
+    background-color: #daefef; 
+    border-radius: 6px;
+    position: absolute;  
+    border: 2px solid #53ef60; 
+    font-family: 'Monserrat', sans-serif;
+    z-index: 1; 
+    margin: auto; 
+    width: 200px;   
+    font: italic;
+    /* positioning the msg */
 }
+
+#feel_meaning { 
+    top: -5%; 
+    left: -6%;
+} 
+
+#sun_meaning {
+    top: 5%; 
+    left: 18%;
+}
+
+#eye_meaning {
+    top: -15%; 
+    left: 43%;
+}
+
+#dew_meaning {
+    top: -15%; 
+    left: 70%;
+}
+ 
+#umbrella:hover .meaning {
+    visibility: visible; 
+    cursor: pointer; 
+} 
+
+#sun:hover .meaning {
+    visibility: visible; 
+    cursor: pointer; 
+} 
+
+#eye:hover .meaning { 
+    visibility: visible; 
+    cursor: pointer; 
+} 
+
+#dew_hover:hover .meaning { 
+    visibility: visible; 
+    cursor: pointer; 
+} 
